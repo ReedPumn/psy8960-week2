@@ -7,3 +7,5 @@ rt_df$gender[rt_df$gender == "M"] <- "Male" ; rt_df$gender[rt_df$gender == "F"] 
 mean(rt_df$rt)
 rt_f_df <- subset(rt_df, rt_df$gender == "Female")
 hist(rt_f_df$rt)
+datasets <- list(rt_df, rt_f_df)
+datasets[[1]][2]
